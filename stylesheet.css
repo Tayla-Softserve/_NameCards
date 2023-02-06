@@ -24,22 +24,17 @@ div.cardBox {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* width: var(--whole-width);
-    height: var(--whole-height); */
     background-color: white;
-
 }
 
-.card{
+.card {
     display: flex;
     position: relative;
-    /* height: 19mm; */
     width: 73mm;
     padding: 4.4mm;
-    /*outline: 3mm solid rgb(58, 58, 60);*/
 }
 
-.top-left-vert-trimmark {
+.top-left-vertical-trimmark {
     width: var(--trim-black-line);
     height: var(--trim-mark);
     background-color: black;
@@ -49,8 +44,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.top-left-vert-trimmark::before,
-.top-left-vert-trimmark::after {
+.top-left-vertical-trimmark::before,
+.top-left-vertical-trimmark::after {
     content: "";
     position: absolute;
     width: var(--trim-white-line);
@@ -58,15 +53,15 @@ div.cardBox {
     background-color: white;
 }
 
-.top-left-vert-trimmark::before {
+.top-left-vertical-trimmark::before {
     left: -0.1mm;
 }
 
-.top-left-vert-trimmark::after {
+.top-left-vertical-trimmark::after {
     right: -0.1mm;
 }
 
-.top-left-hor-trimmark{
+.top-left-horizontal-trimmark {
     width: var(--trim-mark);
     height: var(--trim-black-line);
     background-color: black;
@@ -76,8 +71,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.top-left-hor-trimmark::before,
-.top-left-hor-trimmark::after{
+.top-left-horizontal-trimmark::before,
+.top-left-horizontal-trimmark::after {
     content: "";
     position: absolute;
     left: 0;
@@ -86,15 +81,15 @@ div.cardBox {
     background-color: white;
 }
 
-.top-left-hor-trimmark::before{
+.top-left-horizontal-trimmark::before {
     top: -0.1mm;
 }
 
-.top-left-hor-trimmark::after{
+.top-left-horizontal-trimmark::after {
     bottom: -0.1mm;
 }
 
-.top-right-vert-trimmark{
+.top-right-vertical-trimmark {
     width: var(--trim-black-line);
     height: var(--trim-mark);
     background-color: black;
@@ -104,8 +99,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.top-right-vert-trimmark::before,
-.top-right-vert-trimmark::after{
+.top-right-vertical-trimmark::before,
+.top-right-vertical-trimmark::after {
     content: "";
     position: absolute;
     width: var(--trim-white-line);
@@ -113,15 +108,15 @@ div.cardBox {
     background-color: white;
 }
 
-.top-right-vert-trimmark::before{
+.top-right-vertical-trimmark::before {
     left: -0.1mm;
 }
 
-.top-right-vert-trimmark::after{
+.top-right-vertical-trimmark::after {
     right: -0.1mm;
 }
 
-.top-right-hor-trimmark{
+.top-right-horizontal-trimmark {
     width: var(--trim-mark);
     height: var(--trim-black-line);
     background-color: black;
@@ -131,8 +126,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.top-right-hor-trimmark::before,
-.top-right-hor-trimmark::after{
+.top-right-horizontal-trimmark::before,
+.top-right-horizontal-trimmark::after {
     content: "";
     right: 0;
     position: absolute;
@@ -141,15 +136,15 @@ div.cardBox {
     background-color: white;
 }
 
-.top-right-hor-trimmark::before{
+.top-right-horizontal-trimmark::before {
     top: -0.1mm;
 }
 
-.top-right-hor-trimmark::after{
+.top-right-horizontal-trimmark::after {
     bottom: -0.1mm;
 }
 
-.bottom-left-vert-trimmark{
+.bottom-left-vertical-trimmark {
     width: var(--trim-black-line);
     height: var(--trim-mark);
     background-color: black;
@@ -159,8 +154,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.bottom-left-vert-trimmark::before,
-.bottom-left-vert-trimmark::after{
+.bottom-left-vertical-trimmark::before,
+.bottom-left-vertical-trimmark::after {
     content: "";
     position: absolute;
     width: var(--trim-white-line);
@@ -168,15 +163,15 @@ div.cardBox {
     background-color: white;
 }
 
-.bottom-left-vert-trimmark::before{
+.bottom-left-vertical-trimmark::before {
     left: -0.1mm;
 }
 
-.bottom-left-vert-trimmark::after{
+.bottom-left-vertical-trimmark::after {
     right: -0.1mm;
 }
 
-.bottom-left-hor-trimmark{
+.bottom-left-horizontal-trimmark {
     width: var(--trim-mark);
     height: var(--trim-black-line);
     background-color: black;
@@ -186,8 +181,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.bottom-left-hor-trimmark::before,
-.bottom-left-hor-trimmark::after{
+.bottom-left-horizontal-trimmark::before,
+.bottom-left-horizontal-trimmark::after {
     content: "";
     position: absolute;
     left: 0;
@@ -196,15 +191,15 @@ div.cardBox {
     background-color: white;
 }
 
-.bottom-left-hor-trimmark::before{
+.bottom-left-horizontal-trimmark::before {
     top: -0.1mm;
 }
 
-.bottom-left-hor-trimmark::after{
+.bottom-left-horizontal-trimmark::after {
     bottom: -0.1mm;
 }
 
-.bottom-right-vert-trimmark{
+.bottom-right-vertical-trimmark {
     width: var(--trim-black-line);
     height: var(--trim-mark);
     background-color: black;
@@ -214,8 +209,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.bottom-right-vert-trimmark::before,
-.bottom-right-vert-trimmark::after{
+.bottom-right-vertical-trimmark::before,
+.bottom-right-vertical-trimmark::after {
     content: "";
     position: absolute;
     width: var(--trim-white-line);
@@ -223,15 +218,15 @@ div.cardBox {
     background-color: white;
 }
 
-.bottom-right-vert-trimmark::before{
+.bottom-right-vertical-trimmark::before {
     left: -0.1mm;
 }
 
-.bottom-right-vert-trimmark::after{
+.bottom-right-vertical-trimmark::after {
     right: -0.1mm;
 }
 
-.bottom-right-hor-trimmark{
+.bottom-right-horizontal-trimmark {
     width: var(--trim-mark);
     height: var(--trim-black-line);
     background-color: black;
@@ -241,8 +236,8 @@ div.cardBox {
     z-index: 1;
 }
 
-.bottom-right-hor-trimmark::before,
-.bottom-right-hor-trimmark::after{
+.bottom-right-horizontal-trimmark::before,
+.bottom-right-horizontal-trimmark::after {
     content: "";
     bottom: 7.4mm;
     right: 0;
@@ -252,20 +247,23 @@ div.cardBox {
     background-color: white;
 }
 
-.bottom-right-hor-trimmark::before{
+.bottom-right-horizontal-trimmark::before {
     top: -0.1mm;
 }
 
-.bottom-right-hor-trimmark::after{
+.bottom-right-horizontal-trimmark::after {
     bottom: -0.1mm;
 }
 
-.name-container{
+.name-container {
     display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-62%, -50%); /* Shifted to compensate for the logo in the bottom left corner*/
+
+    /* Shifted to compensate for the logo in the bottom left corner*/
+    transform: translate(-62%, -50%);
+
     z-index: 1;
     height: 10mm;
     max-width: 45mm;
@@ -273,21 +271,20 @@ div.cardBox {
     align-items: center;
 }
 
-.name-text{
+.name-text {
     display: flex;
     position: relative;
-    font-family: 'Oakes Regular';
-    font-size: 15pt;
-        /* For really long names, 12pt is good*/
-        /* For name and surnames, ~15pt is pretty good*/
-        /* 17pt (what the asked for) is very big and only works for first names*/
+    font-family: "Oakes Regular";
 
+    /* For really long names, 12pt is good*/
+    /* For name and surnames, ~15pt is pretty good*/
+    /* 17pt (what the asked for) is very big and only works for first names*/
+    font-size: 15pt;
     color: rgb(190, 175, 135);
     white-space: nowrap;
-    
 }
 
 @font-face {
-    font-family: 'Oakes Regular';
+    font-family: "Oakes Regular";
     src: url(./fonts/Oakes\ Grotesk\ Regular.ttf);
 }
