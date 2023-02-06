@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    --bleed: 3mm;
+    --white-space: 4.4mm;
+    --trim-mark: 5.282mm;
+    --whole-height: 23.4mm;
+    --whole-width: 77.4mm;
+    --trim-black-line: 0.1mm;
+    --trim-white-line: 0.1mm;
+}
+
+div.cardBox {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* width: var(--whole-width);
+    height: var(--whole-height); */
+    background-color: white;
+
+}
+
+.card{
+    display: flex;
+    position: relative;
+    /* height: 19mm; */
+    width: 73mm;
+    padding: 4.4mm;
+    /*outline: 3mm solid rgb(58, 58, 60);*/
+}
+
+.top-left-vert-trimmark {
+    width: var(--trim-black-line);
+    height: var(--trim-mark);
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 7.4mm;
+    z-index: 1;
+}
+
+.top-left-vert-trimmark::before,
+.top-left-vert-trimmark::after {
+    content: "";
+    position: absolute;
+    width: var(--trim-white-line);
+    height: var(--trim-mark);
+    background-color: white;
+}
+
+.top-left-vert-trimmark::before {
+    left: -0.1mm;
+}
+
+.top-left-vert-trimmark::after {
+    right: -0.1mm;
+}
+
+.top-left-hor-trimmark{
+    width: var(--trim-mark);
+    height: var(--trim-black-line);
+    background-color: black;
+    position: absolute;
+    top: 7.4mm;
+    left: 0;
+    z-index: 1;
+}
+
+.top-left-hor-trimmark::before,
+.top-left-hor-trimmark::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: var(--trim-mark);
+    height: var(--trim-white-line);
+    background-color: white;
+}
+
+.top-left-hor-trimmark::before{
+    top: -0.1mm;
+}
+
+.top-left-hor-trimmark::after{
+    bottom: -0.1mm;
+}
+
+.top-right-vert-trimmark{
+    width: var(--trim-black-line);
+    height: var(--trim-mark);
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 7.4mm;
+    z-index: 1;
+}
+
+.top-right-vert-trimmark::before,
+.top-right-vert-trimmark::after{
+    content: "";
+    position: absolute;
+    width: var(--trim-white-line);
+    height: var(--trim-mark);
+    background-color: white;
+}
+
+.top-right-vert-trimmark::before{
+    left: -0.1mm;
+}
+
+.top-right-vert-trimmark::after{
+    right: -0.1mm;
+}
+
+.top-right-hor-trimmark{
+    width: var(--trim-mark);
+    height: var(--trim-black-line);
+    background-color: black;
+    position: absolute;
+    top: 7.4mm;
+    right: 0;
+    z-index: 1;
+}
+
+.top-right-hor-trimmark::before,
+.top-right-hor-trimmark::after{
+    content: "";
+    right: 0;
+    position: absolute;
+    width: var(--trim-mark);
+    height: var(--trim-white-line);
+    background-color: white;
+}
+
+.top-right-hor-trimmark::before{
+    top: -0.1mm;
+}
+
+.top-right-hor-trimmark::after{
+    bottom: -0.1mm;
+}
+
+.bottom-left-vert-trimmark{
+    width: var(--trim-black-line);
+    height: var(--trim-mark);
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 7.4mm;
+    z-index: 1;
+}
+
+.bottom-left-vert-trimmark::before,
+.bottom-left-vert-trimmark::after{
+    content: "";
+    position: absolute;
+    width: var(--trim-white-line);
+    height: var(--trim-mark);
+    background-color: white;
+}
+
+.bottom-left-vert-trimmark::before{
+    left: -0.1mm;
+}
+
+.bottom-left-vert-trimmark::after{
+    right: -0.1mm;
+}
+
+.bottom-left-hor-trimmark{
+    width: var(--trim-mark);
+    height: var(--trim-black-line);
+    background-color: black;
+    position: absolute;
+    bottom: 7.4mm;
+    left: 0;
+    z-index: 1;
+}
+
+.bottom-left-hor-trimmark::before,
+.bottom-left-hor-trimmark::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: var(--trim-mark);
+    height: var(--trim-white-line);
+    background-color: white;
+}
+
+.bottom-left-hor-trimmark::before{
+    top: -0.1mm;
+}
+
+.bottom-left-hor-trimmark::after{
+    bottom: -0.1mm;
+}
+
+.bottom-right-vert-trimmark{
+    width: var(--trim-black-line);
+    height: var(--trim-mark);
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    right: 7.4mm;
+    z-index: 1;
+}
+
+.bottom-right-vert-trimmark::before,
+.bottom-right-vert-trimmark::after{
+    content: "";
+    position: absolute;
+    width: var(--trim-white-line);
+    height: var(--trim-mark);
+    background-color: white;
+}
+
+.bottom-right-vert-trimmark::before{
+    left: -0.1mm;
+}
+
+.bottom-right-vert-trimmark::after{
+    right: -0.1mm;
+}
+
+.bottom-right-hor-trimmark{
+    width: var(--trim-mark);
+    height: var(--trim-black-line);
+    background-color: black;
+    position: absolute;
+    bottom: 7.4mm;
+    right: 0;
+    z-index: 1;
+}
+
+.bottom-right-hor-trimmark::before,
+.bottom-right-hor-trimmark::after{
+    content: "";
+    bottom: 7.4mm;
+    right: 0;
+    position: absolute;
+    width: var(--trim-mark);
+    height: var(--trim-white-line);
+    background-color: white;
+}
+
+.bottom-right-hor-trimmark::before{
+    top: -0.1mm;
+}
+
+.bottom-right-hor-trimmark::after{
+    bottom: -0.1mm;
+}
+
+.name-container{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-62%, -50%); /* Shifted to compensate for the logo in the bottom left corner*/
+    z-index: 1;
+    height: 10mm;
+    max-width: 45mm;
+    min-width: 20mm;
+    align-items: center;
+}
+
+.name-text{
+    display: flex;
+    position: relative;
+    font-family: 'Oakes Regular';
+    font-size: 15pt;
+        /* For really long names, 12pt is good*/
+        /* For name and surnames, ~15pt is pretty good*/
+        /* 17pt (what the asked for) is very big and only works for first names*/
+
+    color: rgb(190, 175, 135);
+    white-space: nowrap;
+    
+}
+
+@font-face {
+    font-family: 'Oakes Regular';
+    src: url(./fonts/Oakes\ Grotesk\ Regular.ttf);
+}
